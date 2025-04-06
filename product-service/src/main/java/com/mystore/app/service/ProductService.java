@@ -2,6 +2,7 @@ package com.mystore.app.service;
 
 import com.mystore.app.entity.Product;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,6 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+@RefreshScope
 @Service
 public class ProductService {
 
